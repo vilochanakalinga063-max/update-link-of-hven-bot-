@@ -21,7 +21,7 @@ MAIN_CHANNEL_ID = '-1003793313921'
 # යූසර්ට ශෙයා කරන්න දෙන ලින්ක් එක
 MY_CHANNEL_PROMO_LINK = "https://t.me/+UwbKbKQ3Z9Y5NjE1"
 
-MY_WEBSITE_URL = "https://merry-churros-da0304.netlify.app/"
+MY_WEBSITE_URL = "https://merry-churros-da0304.netlify.app/?url="
 
 user_data = {}
 
