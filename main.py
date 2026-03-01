@@ -58,7 +58,7 @@ def handle_steps(message):
 
 def post_to_channel(name, link):
     # විනාඩි 13ක් බලා ඉන්නවා (පරීක්ෂා කිරීමට තත්පර 10ක් දාලා බලන්න)
-    time.sleep(780) 
+    time.sleep(10) 
     
     final_web_link = f"{MY_WEBSITE_URL}{urllib.parse.quote(link, safe='')}"
     
