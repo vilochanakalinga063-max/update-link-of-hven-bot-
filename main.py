@@ -21,7 +21,7 @@ MAIN_CHANNEL_ID = '-1003793313921'
 # යූසර්ට ශෙයා කරන්න දෙන ලින්ක් එක
 MY_CHANNEL_PROMO_LINK = "https://t.me/+UwbKbKQ3Z9Y5NjE1"
 
-MY_WEBSITE_URL = "https://flourishing-brioche-1d88ea.netlify.app/?url="
+MY_WEBSITE_URL = "https://merry-churros-da0304.netlify.app/"
 
 user_data = {}
 
@@ -29,7 +29,7 @@ user_data = {}
 def start(message):
     user_id = message.from_user.id
     user_data[user_id] = {'step': 'GET_LINK'}
-    bot.reply_to(message, "👋 ආයුබෝවන්! කරුණාකර ඔයාගේ Channel ලින්ක් එක එවන්න.")
+    bot.reply_to(message, "👋 හරි දැන් ඔයාගේ Channel ලින්ක් එක එවන්න.")
 
 @bot.message_handler(func=lambda message: True)
 def handle_steps(message):
@@ -50,7 +50,7 @@ def handle_steps(message):
         display_name = message.text.strip()
         submitted_link = user_data[user_id]['link']
         
-        bot.reply_to(message, f"🙌 ස්තූතියි! දැන් මේ ලින්ක් එක ශෙයා කරන්න: {MY_CHANNEL_PROMO_LINK}\n\nවිනාඩි 15කින් පෝස්ට් එක පල වෙයි.")
+        bot.reply_to(message, f"🙌 හරි දැන් මේ මගේ චැනල් එකේ ලින්ක් එක ඔයාගේ ගෲප් එකේ ශෙයා කරන්න: {MY_CHANNEL_PROMO_LINK}\n\nවිනාඩි 10ක් හො 15ක් අතුලත ඔයා share කරපු එක බලල මන් මගෙ channel එකේ ඔයාගෙ link එක දාන්නම්.")
         
         # විනාඩි 13කින් කෙලින්ම චැනල් එකට පෝස්ට් කරනවා
         Thread(target=post_to_channel, args=(display_name, submitted_link)).start()
