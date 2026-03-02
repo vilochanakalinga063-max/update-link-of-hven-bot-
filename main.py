@@ -12,7 +12,7 @@ def home(): return "Direct Submission Bot Active"
 def run(): app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)))
 
 # --- Settings ---
-API_TOKEN = '8717215830:AAGbjq3i310-Fuf2rk5ifxS3ociKc6CaUGo' 
+API_TOKEN = '8717215830:AAFP7XODHH1NjIIIPohZsBX03nKtcaDPJmc' 
 bot = telebot.TeleBot(API_TOKEN)
 
 # පෝස්ට් එක වැටෙන්න ඕනේ චැනල් එකේ ID එක
