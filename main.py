@@ -58,14 +58,14 @@ def handle_steps(message):
 
 def post_to_channel(name, link):
     # විනාඩි 13ක් බලා ඉන්නවා (පරීක්ෂා කිරීමට තත්පර 10ක් දාලා බලන්න)
-    time.sleep(10) 
+    time.sleep(360) 
     
     final_web_link = f"{MY_WEBSITE_URL}{urllib.parse.quote(link, safe='')}"
     
     markup = InlineKeyboardMarkup()
     markup.add(InlineKeyboardButton(f"{link}", url=final_web_link))
     
-    caption = f"📍 **{name}**\n\nLink එකට පිවිසීමට පහත බොත්තම ඔබන්න. 👇"
+    caption = f"📍 **{name}**\n\nLink here 👇"
     
     try:
         bot.send_message(MAIN_CHANNEL_ID, caption, reply_markup=markup, parse_mode="Markdown")
